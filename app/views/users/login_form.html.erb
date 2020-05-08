@@ -1,0 +1,25 @@
+<div class="main login-form">
+  <div class="container">
+    <div class="form-all">
+      <div class="form-head">
+        <h3>ひまチャットにログイン</h3>
+      </div>
+      <div class="login-body">
+        <%= @error %>
+        <%= form_tag("/login") do %>
+        <div class="form-body">
+          <p>
+            ユーザー名
+            <input class="box name" name="name" value="<%= @name %>">
+          </p>
+          <p>
+          パスワード
+          <input class="box password" type="password" name="password" value="<%= @password %>">
+          </p>
+          <p><input class="submit" type="submit" value="ログイン"></p>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

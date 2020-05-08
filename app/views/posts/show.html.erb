@@ -1,0 +1,96 @@
+<div class="main posts-show">
+  <div class="container">
+    <div class="over-user-show">
+      <div class="orver-head">
+        <li><img class="post-icon-mini" src="<%= "/user_images/#{@post.user.image_name}" %>"</li>
+        <li><%= link_to(@post.user.name,"/users/#{@post.user.id}",{class: "show-name"}) %></li>
+      </div>
+      <div class="under-head">
+        <p><%= @post.content %></p>
+        <div class="post-show-bottom post-time">
+          <%= @post.updated_at.strftime("%Y-%m-%d %H:%M") %>
+        </div>
+      </div>
+
+
+      <div class="post-show-foot">
+          <li>
+          <div class="foot-heart">
+            <% if Like.find_by(user_id: @current_user.id, post_id: @post.id) %>
+              <%= link_to("/likes/#{@post.id}/destroy_post_show",{method: "post"}) do %>
+                <span class="fa fa-heart like-btn-unlike"></span>
+              <% end %>
+            <% else %>
+              <%= link_to("/likes/#{@post.id}/create_post_show",{method: "post"}) do %>
+              <span class="fa fa-heart like-btn"></span>
+              <% end %>
+            <% end %>
+            <% if @likes_count > 0 %>
+              <%= @likes_count %>
+            <% end %>
+          </div>
+          </li>
+
+          <li>
+            <div class="comment-icon">
+              <%= link_to("/posts/#{@post.id}/comment") do %>
+              <span class="fa fa-comment"></span>
+              <% end %>
+              <% if @comment_count > 0 %>
+                <%= @comment_count %>
+              <% end %>
+            </div>
+          </li>
+
+          <% if @post.user_id == @current_user.id %>
+          <li>
+            <div class="foot-edit">
+              <%= link_to("/posts/#{@post.id}/edit") do %>
+              <span class="fa fa-edit"></span>
+              <% end %>
+            </div>
+          </li>
+
+          <li>
+            <div class="foot-destroy">
+              <%= link_to("/posts/#{@post.id}/destroy",{method: "post"}) do %>
+              <span class="fa fa-trash"></span>
+              <% end %>
+            </div>
+          </li>
+
+          <% end %>
+
+      </div>
+
+    </div>
+    <% if @com %>
+      <div class="comment-header">
+        <p>コメント</p>
+      </div>
+      <div class="under-post-show">
+        <% @comment.each do |comments| %>
+        <% post = Post.find_by(user_id: comments.user_id) %>
+        <div class="comment-list">
+          <div class="comment-left">
+            <div class="comment-image">
+              <img class="post-icon-mini" src="<%= "/user_images/#{post.user.image_name}" %>">
+            </div>
+          </div>
+          <div class="comment-right">
+            <div class="comment-name">
+              <%= link_to(post.user.name,"/users/#{post.user.id}") %>
+            </div>
+            <div class="comment-body">
+              <%= comments.comment %>
+            </div>
+            <div class="post-time comment-time">
+              <%= post.updated_at.strftime("%Y-%m-%d %H:%M") %>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

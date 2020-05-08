@@ -1,0 +1,66 @@
+<div class="main posts-index">
+  <div class="container">
+    <div class="post-index-all">
+      <div class="form-head">
+        <h3>投稿一覧</h3>
+      </div>
+      <% @posts.each do |post|%>
+      <div class="post-index-item">
+        <div class="post-index-left">
+          <img class="post-icon index-icon" src="<%= "/user_images/#{post.user.image_name}" %>">
+        </div>
+        <div class="post-index-right">
+          <div class="post-user-name">
+            <%= link_to(post.user.name,"/users/#{post.user.id}") %>
+          </div>
+          <div class="post-user-content">
+            <%= link_to(post.content,"/posts/#{post.id}") %>
+          </div>
+          <div class="post-index-bottom">
+            <div class="post-bottom-left">
+
+              <div class="heart-all">
+                <div class="index-heart">
+                <% if Like.find_by(user_id: @current_user.id, post_id: post.id) %>
+                  <%= link_to("/likes/#{post.id}/destroy_index",{method: "post"}) do %>
+                    <span class="fa fa-heart like-btn-unlike"></span>
+                  <% end %>
+                <% else %>
+                  <%= link_to("/likes/#{post.id}/create_index",{method: "post"}) do %>
+                  <span class="fa fa-heart like-btn"></span>
+                  <% end %>
+                <% end %>
+                </div>
+                <div class="index-count">
+                <% @likes_count = Like.where(post_id: post.id).count %>
+                <% if @likes_count > 0 %>
+                  <%= @likes_count %>
+                <% end %>
+                </div>
+              </div>
+
+              <div class="comment-all">
+                <div class="user-show-comment-icon">
+                  <%= link_to("/posts/#{post.id}/comment") do %>
+                  <span class="fa fa-comment iconicon"></span>
+                  <% end %>
+                </div>
+                <div class="user-show-comment-count">
+                  <% @comment_count = Comment.where(post_id: post.id).count %>
+                  <% if @comment_count > 0 %>
+                    <%= @comment_count %>
+                  <% end %>
+                </div>
+              </div>
+
+            </div>
+            <div class="post-time post-bottom-right">
+              <%= post.updated_at.strftime("%Y-%m-%d %H:%M") %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

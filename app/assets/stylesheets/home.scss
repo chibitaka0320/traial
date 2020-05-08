@@ -1,0 +1,73 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//--------topのCSS---------
+
+.tops {
+  font-family: fantasy;
+  height: 100%;
+}
+.top-left {
+  background-image: url("/cloudicon.jpg");
+  background-position: center center;
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.left-message {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.top-message h1 {
+  margin-left: 20px;
+  font-size: 50px;
+}
+.sub-message {
+  font-family: fantasy;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.fatop {
+  display: inline-block;
+  padding: 0 5px;
+  color: #00bfff;
+}
+
+
+.top-right {
+  float: right;
+  background-color: #00BFFF;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.right-message {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.in-form a {
+  font-weight: bold;
+  display: block;
+  padding: 5px;
+  background-color: white;
+  letter-spacing: 5px;
+  border-radius: 10px;
+  width: 250px;
+  margin:20px auto;
+}
+.in-form a:hover {
+  background-color: #dddddd;
+}
+.in-form a:active {
+  position: relative;
+  top: 5px;
+}

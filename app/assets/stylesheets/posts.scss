@@ -1,0 +1,235 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.post-icon {
+  width: 50px;
+  border: 3px solid #aaaaaa;
+  border-radius: 50px;
+}
+
+//投稿一覧CSS//
+.post-index-all{
+  margin-bottom: 100px;
+}
+.post-index-item {
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+  padding: 20px 40px 10px 20px;
+  width: 450px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.post-index-left {
+  float: left;
+  width: 20%;
+}
+.post-index-right {
+  float: right;
+  width: 80%;
+}
+.post-user-name {
+  text-align: left;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.post-user-content {
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.post-bottom-left {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.index-heart {
+  float: left;
+  margin-right: 10px;
+}
+.heart-all {
+  width: 50%;
+  float: left;
+}
+.post-bottom-right {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+//新規投稿,投稿編集//
+textarea {
+  width: 320px;
+  height: 125px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  font-family: cursive;
+}
+//投稿詳細//
+.orver-head li {
+  float: left;
+}
+.post-icon-mini {
+  width: 30px;
+  border: 2px solid #aaaaaa;
+  border-radius: 50px;
+}
+.under-head {
+  margin-top: 40px;
+  text-align: left;
+  font-size: 20px;
+}
+.under-head p {
+  border-top: 1px solid #dddddd;
+  margin-bottom: 10px;
+  padding: 10px 40px 0 40px;
+}
+.post-show-bottom {
+  text-align: right;
+  font-size: 13px;
+  border-bottom: 1px solid #dddddd;
+  padding: 0 15px;
+  margin-bottom: 0px;
+}
+.show-name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 3px;
+  display: block;
+}
+.post-show-foot {
+  padding: 10px 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.post-show-foot li {
+  float: left;
+  width: 25%;
+}
+
+.foot-edit a {
+  color: #888888;
+}
+.foot-destroy a {
+  color: #888888;
+}
+.foot {
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+.foot-left {
+  float: left;
+  margin-left: 25px;
+  font-size: 16px;
+}
+.comment-icon .fa {
+  color: #00bfff;
+}
+.foot-right {
+  float: right;
+}
+.foot-right li {
+  display:inline-block;
+  padding: 0 10px 10px 10px;
+}
+.foot-right a {
+  color: #888888;
+}
+.foot-right a:hover {
+  color: black;
+}
+.comment-header {
+  background-color: white;
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: left;
+}
+.comment-header p {
+  margin: 0;
+  padding: 0 20px;
+}
+.under-post-show {
+  margin-bottom: 60px;
+}
+.comment-list {
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+  padding: 10px 20px 0px 20px;
+  width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.comment-left {
+  float: left;
+  width: 20%;
+}
+.comment-right {
+  float: right;
+  width: 80%;
+  text-align: left;
+}
+.comment-name {
+  font-weight: bold;
+}
+.comment-body {
+  margin: 10px 10px 0 10px;
+}
+.comment-time {
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+//投稿時間//
+.post-time {
+  color: #999999;
+}
+
+//??????//
+.all {
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+  padding: 20px;
+  width: 400px;
+  margin: 0 auto;
+}
+//いいねボタン//
+.like-btn {
+  color: #8899a6;
+}
+.like-btn-unlike {
+  color: red;
+}
+.likes_count {
+  font-size: 10px
+}
+
+//コメント投稿用//
+.comment-user-show {
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+  padding: 10px 20px 0 20px;
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 60px;
+  overflow: hidden;
+}
+.post-comment {
+  width: 450px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 10px 20px;
+}
+.post-comment h5 {
+  margin: 0px;
+  text-align: left;
+  padding-left: 65px;
+  font-weight: normal;
+}
+.post-comment p {
+  margin: 0;
+}

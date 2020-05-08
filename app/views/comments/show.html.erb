@@ -1,0 +1,29 @@
+<div class="main comment-show">
+  <div class="container">
+    <div class="over-comment-show">
+      <div class="orver-head">
+        <li><img class="post-icon-mini" src="<%= "/user_images/#{@user.image_name}" %>"</li>
+        <li><%= link_to(@user.name,"/users/#{@user.id}",{class: "show-name"}) %></li>
+      </div>
+      <div class="under-head">
+        <p><%= @comment.comment %></p>
+        <div class="post-show-bottom post-time">
+          <%= @comment.updated_at.strftime("%Y-%m-%d %H:%M") %>
+        </div>
+      </div>
+
+      <div class="post-show-foot">
+          <% if @current_user.id == @comment.user_id %>
+          <li>
+            <div class="foot-destroy">
+              <%= link_to("/comments/#{@comment.id}/destroy",{method: "post"}) do %>
+              <span class="fa fa-trash"></span>
+              <% end %>
+            </div>
+          </li>
+          <% end %>
+      </div>
+
+    </div>
+  </div>
+</div>

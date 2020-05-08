@@ -1,0 +1,112 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.header-right a:hover {
+  color: #60EEFF	;
+  transition: all 0.5s;
+}
+ .box {
+  font-size: 15px;
+  width: 200px;
+  height: 20px;
+  margin: 10px 7px;
+  letter-spacing: 2px;
+}
+.submit{
+  margin-top: 10px;
+  padding: 3px 20px;
+  background-color: rgba(0,200,200,0.4);
+  border-radius: 7px;
+}
+.submit:hover {
+  cursor: pointer;
+}
+.form-head h3 {
+  padding-top: 40px;
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+body {
+  background-color: #8EF1FF;
+  height: 100%;
+  margin: 0;
+}
+
+.main {
+  text-align: center;
+}
+
+header {
+  color: black;
+  font-weight: bold;
+  height: 50px;
+  background-color: white;
+}
+
+.header-left {
+  float: left;
+  line-height: 50px;
+}
+.header-left li {
+  float: left;
+  padding-left: 5px;
+}
+.header-icon {
+  width: 20px;
+  border: 2px solid #aaaaaa;
+  border-radius: 50px;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-right li {
+  float: left;
+  padding-left: 10px;
+}
+
+.flash {
+  padding: 10px 0;
+  color: white;
+  background: #6666FF;
+  text-align: center;
+  z-index: 10;
+  width: 100%;
+  border-radius: 0 0 2px 2px;
+  font-size: 14px;
+}
+}

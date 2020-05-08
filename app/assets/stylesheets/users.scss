@@ -1,0 +1,217 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.showmian {
+  width: 80px;
+  border: 3px solid #aaaaaa;
+  border-radius: 50px;
+}
+
+//ログインフォームCSS//
+
+.login-body {
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+  padding: 4px 20px 20px 20px;
+}
+
+
+//ユーザー詳細CSS//
+.user-foot {
+  border-bottom: 1px solid #dddddd;
+  padding: 0 10px 8px 10px;
+  margin-bottom: 20px;
+  font-size: 14px
+}
+.over-user-show {
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+  padding: 10px 20px 0 20px;
+  width: 400px;
+  margin: 60px auto;
+  overflow: hidden;
+}
+.under-user-show {
+  margin: 50px 0 100px 0;
+}
+.under-user-show-header {
+  background-color: #eeeeee;
+  box-shadow: 0 2px 6px #c1ced7;
+  width: 510px;
+  margin: 0 auto;
+  height: 40px;
+  line-height: 40px;
+}
+.lesson {
+  float: left;
+  width: 33.3%;
+  box-shadow: 0 0 2px #c1ced7;
+}
+.show-post {
+  color: #00bfff;
+  background-color: white;
+  border-bottom: 1px solid #00bfff;
+}
+.show-post a {
+  display: block;
+}
+.show-post a:hover {
+  background-color: #EEFFFF;
+  transition: all 0.5s;
+}
+.show-comment a {
+  display: block;
+}
+.show-comment a:hover {
+  background-color: #EEFFFF;
+  transition: all 0.5s;
+}
+.show-like a {
+  display: block;
+}
+.show-like a:hover {
+  background-color: #EEFFFF;
+  transition: all 0.5s;
+}
+.user-foot {
+  text-align: right;
+}
+.user-foot a {
+  color: #999999;
+}
+.user-show-left {
+  float: left;
+  text-align: left;
+  width: 50%;
+}
+.user-show-left li {
+  float: left;
+}
+.user-show-heart {
+  float: left;
+  width: 50%;
+}
+.user-show-heart-icon {
+  float: left;
+  margin-right: 10px
+}
+.user-show-comment-icon {
+  float: left;
+  margin-right: 10px;
+}
+.iconicon {
+  color: #888888;
+}
+.user-show-comment {
+  float: right;
+  width: 50%;
+}
+.user-show-right {
+  float: right;
+  width: 50%;
+}
+//いいね一覧//
+.like-post {
+  background-color: #eeeeee;
+  border: none;
+}
+.like-like {
+  background: white;
+  color: #00bfff;
+  border-bottom: 1px solid #00bfff;
+}
+.user-show-like-bottom {
+  text-align: right;
+}
+.user-show-like-bottom p {
+  margin: 0;
+}
+//ユーザー一覧//
+.user-index-item {
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+  padding: 5px 50px 5px 20px;
+  width: 270px;
+  margin: 0 auto;
+  height: 60px;
+}
+.user-index-left {
+  float: left;
+  width: 20%;
+}
+.user-index-right {
+  float: right;
+  width: 80%;
+  line-height: 60px;
+  text-align: left;
+}
+.user-index-name {
+  font-weight: bold;
+  padding-left: 30px;
+  letter-spacing: 3px;
+}
+
+//アカウント編集//
+.acountedit {
+  width: 550px;
+  margin: 0 auto;
+}
+.form-body-head {
+  border-bottom: 1px solid #dddddd;
+  padding: 20px 10px;
+  height: 10px;
+}
+.form-body-left {
+  float: left;
+  margin-left: 20px;
+}
+.form-body-left a {
+  color: #888888;
+}
+.form-body-left a:hover {
+  color: black;
+}
+.form-body-right {
+  text-align: right;
+  margin-right: 20px;
+}
+.form-body-right a {
+  color: #888888;
+}
+.form-body-right a:hover {
+  color: black;
+}
+//コメント一覧//
+
+.comment-comment {
+  background: white;
+  color: #00bfff;
+  border-bottom: 1px solid #00bfff;
+}
+.user-comment-title {
+  text-align: left;
+  margin: 0 0 20px 30px;
+}
+.user-comment-title p {
+  display: inline-block;
+  margin: 0;
+  color: #888888;
+  border-bottom: 1px solid #888888;
+}
+.user-comment-item{
+  background-color: white;
+  width: 450px;
+  overflow: hidden;
+}
+.user-comment-leftside {
+  float: left;
+  width: 20%;
+}
+.user-comment-rightside {
+  float: right;
+  width: 80%;
+}
+.comment-bo {
+  padding-bottom: 10px;
+}
